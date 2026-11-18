@@ -1,0 +1,2 @@
+import client from '@/shared/api/axiosClient';
+export const authApi={login:async data=>(await client.post('/auth/login',data)).data,register:async data=>(await client.post('/auth/register',data)).data,googleLogin:async idToken=>(await client.post('/auth/google-login',{idToken})).data};

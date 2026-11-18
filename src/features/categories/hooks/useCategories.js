@@ -1,0 +1,14 @@
+import {useQuery,useMutation,useQueryClient} from '@tanstack/react-query';
+import {useState} from 'react';
+import {categoryApi} from '../api/categoryApi';
+import {useAuth} from '@/features/auth/hooks/useAuth';
+import {requireStaff} from '@/features/auth/permissions';
+import {apiError} from '@/shared/api/errors';
+export function useCategories(){
+ const {user}=useAuth();const client=useQueryClient();const [actionError,setError]=useState('');
+ const query=useQuery({queryKey:['categories','list'],queryFn:({signal})=>categoryApi.getAll(signal)});
+ const mutation=useMutation({mutationFn:async({method,id,data})=>{requireStaff(user?.role);return method==='create'?categoryApi.create(data):method==='delete'?categoryApi.delete(id):categoryApi.update(id,data)},onSuccess:()=>{void client.invalidateQueries({queryKey:['categories']});void client.invalidateQueries({queryKey:['books']});}});
+ return {...query,categories:query.data??[],loading:query.isPending,error:actionError||(query.error?apiError(query.error).message:''),setError,fetchCategories:()=>query.refetch(),
+ createCategory:data=>mutation.mutateAsync({method:'create',data}),updateCategory:(id,data)=>mutation.mutateAsync({method:'update',id,data}),deleteCategory:id=>mutation.mutateAsync({method:'delete',id}),pending:mutation.isPending};
+}
+export default useCategories;

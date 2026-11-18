@@ -1,0 +1,158 @@
+# Baseline source inventory
+
+- src/app/api/axiosClient.js (809 bytes)
+- src/app/providers/AppProviders.jsx (535 bytes)
+- src/app/providers/AuthProvider.jsx (1640 bytes)
+- src/app/providers/QueryProvider.jsx (495 bytes)
+- src/app/router/AppRouter.jsx (5206 bytes)
+- src/app/router/ProtectedRoute.jsx (791 bytes)
+- src/app/router/RoleBasedRoute.jsx (925 bytes)
+- src/app/router/routePaths.jsx (833 bytes)
+- src/app/store/authStore.js (1771 bytes)
+- src/app/store/uiStore.js (748 bytes)
+- src/App.jsx (247 bytes)
+- src/assets/vite.svg (8709 bytes)
+- src/features/admin/authors/components/AuthorForm.jsx (2763 bytes)
+- src/features/admin/authors/components/AuthorTable.jsx (1849 bytes)
+- src/features/admin/authors/pages/AuthorManagementPage.jsx (6491 bytes)
+- src/features/admin/books/pages/BookManagementPage.jsx (9179 bytes)
+- src/features/admin/borrows/components/BorrowForm.jsx (0 bytes)
+- src/features/admin/borrows/components/BorrowTable.jsx (0 bytes)
+- src/features/admin/borrows/pages/BorrowManagementPage.jsx (330 bytes)
+- src/features/admin/categories/components/CategoryForm.jsx (1777 bytes)
+- src/features/admin/categories/components/CategoryTable.jsx (2148 bytes)
+- src/features/admin/categories/pages/CategoryManagementPage.jsx (6254 bytes)
+- src/features/admin/dashboard/components/BorrowChart.jsx (1997 bytes)
+- src/features/admin/dashboard/components/StatisticsCard.jsx (1049 bytes)
+- src/features/admin/dashboard/pages/AdminDashboardPage.jsx (1871 bytes)
+- src/features/admin/members/components/MemberTable.jsx (0 bytes)
+- src/features/admin/members/pages/MemberManagementPage.jsx (330 bytes)
+- src/features/auth/api/authApi.js (380 bytes)
+- src/features/auth/components/GoogleLoginButton.jsx (2279 bytes)
+- src/features/auth/components/LoginForm.jsx (2680 bytes)
+- src/features/auth/components/RegisterForm.jsx (0 bytes)
+- src/features/auth/context/AuthContext.jsx (0 bytes)
+- src/features/auth/hooks/useAuth.js (443 bytes)
+- src/features/auth/pages/LoginPage.jsx (1235 bytes)
+- src/features/auth/pages/RegisterPage.jsx (305 bytes)
+- src/features/authors/api/authorApi.js (443 bytes)
+- src/features/books/api/bookApi.js (390 bytes)
+- src/features/books/components/BookCard.jsx (2073 bytes)
+- src/features/books/components/BookDetails.jsx (1333 bytes)
+- src/features/books/components/BookForm.jsx (7154 bytes)
+- src/features/books/components/BookTable.jsx (2991 bytes)
+- src/features/books/hooks/useBooks.js (1299 bytes)
+- src/features/borrows/api/borrowApi.js (0 bytes)
+- src/features/categories/api/categoryApi.js (409 bytes)
+- src/features/members/api/memberApi.js (0 bytes)
+- src/features/user/books/components/BookFilter.jsx (0 bytes)
+- src/features/user/books/components/BookSearch.jsx (0 bytes)
+- src/features/user/books/pages/BookDetailPage.jsx (312 bytes)
+- src/features/user/books/pages/BookListPage.jsx (306 bytes)
+- src/features/user/borrows/components/BorrowHistoryTable.jsx (323 bytes)
+- src/features/user/borrows/pages/MyBorrowsPage.jsx (309 bytes)
+- src/features/user/dashboard/pages/UserDashboardPage.jsx (321 bytes)
+- src/features/user/profile/pages/ProfilePage.jsx (302 bytes)
+- src/main.jsx (536 bytes)
+- src/shared/components/layouts/AdminLayout.jsx (2640 bytes)
+- src/shared/components/layouts/AdminSidebar.jsx (3508 bytes)
+- src/shared/components/layouts/Footer.jsx (546 bytes)
+- src/shared/components/layouts/UserLayout.jsx (523 bytes)
+- src/shared/components/layouts/UserNavbar.jsx (3536 bytes)
+- src/shared/components/ui/Button.jsx (1622 bytes)
+- src/shared/components/ui/DataTable.jsx (2845 bytes)
+- src/shared/components/ui/Input.jsx (1552 bytes)
+- src/shared/components/ui/Loading.jsx (919 bytes)
+- src/shared/components/ui/Modal.jsx (2080 bytes)
+- src/shared/components/ui/Pagination.jsx (3358 bytes)
+- src/shared/components/ui/Select.jsx (1729 bytes)
+- src/shared/hooks/useDebounce.js (585 bytes)
+- src/shared/utils/constants.js (1856 bytes)
+- src/shared/utils/formatCurrency.js (526 bytes)
+- src/shared/utils/formatDate.js (955 bytes)
+- src/styles/index.css (1284 bytes)
+
+## Retained source after refactor (snapshot; use `rg --files src` for current inventory)
+- src/app/ErrorBoundary.jsx
+- src/app/layouts/AdminLayout.jsx
+- src/app/layouts/AdminSidebar.jsx
+- src/app/layouts/Footer.jsx
+- src/app/layouts/UserLayout.jsx
+- src/app/layouts/UserNavbar.jsx
+- src/app/providers/AppProviders.jsx
+- src/app/providers/AuthProvider.jsx
+- src/app/providers/QueryProvider.jsx
+- src/app/router/AppRouter.jsx
+- src/app/router/ProtectedRoute.jsx
+- src/app/router/RoleBasedRoute.jsx
+- src/app/router/routePaths.jsx
+- src/app/store/uiStore.js
+- src/App.jsx
+- src/features/auth/api/authApi.js
+- src/features/auth/components/GoogleLoginButton.jsx
+- src/features/auth/components/LoginForm.jsx
+- src/features/auth/hooks/useAuth.js
+- src/features/auth/navigation.js
+- src/features/auth/pages/LoginPage.jsx
+- src/features/auth/pages/RegisterPage.jsx
+- src/features/auth/permissions.js
+- src/features/auth/store/authStore.js
+- src/features/auth/store/session.js
+- src/features/authors/api/authorApi.js
+- src/features/authors/api/responseSchema.js
+- src/features/authors/components/AuthorForm.jsx
+- src/features/authors/components/AuthorTable.jsx
+- src/features/authors/hooks/useAuthors.js
+- src/features/authors/pages/AuthorManagementPage.jsx
+- src/features/books/api/bookApi.js
+- src/features/books/api/responseSchema.js
+- src/features/books/components/BookCard.jsx
+- src/features/books/components/BookDetails.jsx
+- src/features/books/components/BookForm.jsx
+- src/features/books/components/BookTable.jsx
+- src/features/books/hooks/useBooks.js
+- src/features/books/pages/BookDetailPage.jsx
+- src/features/books/pages/BookListPage.jsx
+- src/features/books/pages/BookManagementPage.jsx
+- src/features/books/schemas/bookSchema.js
+- src/features/borrows/api/borrowApi.js
+- src/features/borrows/api/responseSchema.js
+- src/features/borrows/components/LoanForm.jsx
+- src/features/borrows/hooks/useBorrows.js
+- src/features/borrows/pages/BorrowManagementPage.jsx
+- src/features/borrows/pages/MyBorrowsPage.jsx
+- src/features/categories/api/categoryApi.js
+- src/features/categories/api/responseSchema.js
+- src/features/categories/components/CategoryForm.jsx
+- src/features/categories/components/CategoryTable.jsx
+- src/features/categories/hooks/useCategories.js
+- src/features/categories/pages/CategoryManagementPage.jsx
+- src/features/dashboard/components/BorrowChart.jsx
+- src/features/dashboard/components/StatisticsCard.jsx
+- src/features/dashboard/metrics.js
+- src/features/dashboard/pages/AdminDashboardPage.jsx
+- src/features/dashboard/pages/UserDashboardPage.jsx
+- src/features/members/api/memberApi.js
+- src/features/members/api/responseSchema.js
+- src/features/members/hooks/useMembers.js
+- src/features/members/pages/MemberManagementPage.jsx
+- src/features/profile/pages/ProfilePage.jsx
+- src/main.jsx
+- src/shared/api/axiosClient.js
+- src/shared/api/errors.js
+- src/shared/api/response.js
+- src/shared/components/ui/Button.jsx
+- src/shared/components/ui/DataTable.jsx
+- src/shared/components/ui/Input.jsx
+- src/shared/components/ui/ListControls.jsx
+- src/shared/components/ui/Loading.jsx
+- src/shared/components/ui/Modal.jsx
+- src/shared/components/ui/Pagination.jsx
+- src/shared/components/ui/QueryStatus.jsx
+- src/shared/components/ui/Select.jsx
+- src/shared/components/ui/Unavailable.jsx
+- src/shared/hooks/useDebounce.js
+- src/shared/hooks/useListPage.js
+- src/shared/utils/constants.js
+- src/shared/utils/formatCurrency.js
+- src/shared/utils/formatDate.js

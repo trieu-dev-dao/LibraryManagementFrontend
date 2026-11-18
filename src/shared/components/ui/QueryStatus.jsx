@@ -1,0 +1,2 @@
+import {apiError} from '@/shared/api/errors';
+export default function QueryStatus({query}){if(query.isPending)return <p role="status">Đang tải…</p>;if(query.error)return <div role="alert" className="rounded bg-red-50 p-3 text-red-700">{apiError(query.error).message} {query.data&&'Đang hiển thị dữ liệu cũ.'} <button type="button" onClick={()=>query.refetch()}>Thử lại</button></div>;return query.isFetching?<p role="status">Đang cập nhật…</p>:null;}
